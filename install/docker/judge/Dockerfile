@@ -6,17 +6,7 @@ RUN apt-get -qq update && \
     python3 \
     g++ \
     fp-compiler \
-    openjdk-8-jdk-headless \
-    python \
-    php7.0-cli \
-    rustc \
-    haskell-platform \
-    libjavascriptcoregtk-4.0-bin \
-    golang \
-    ruby \
-    mono-runtime \
-    mono-mcs
-
+    python
 ADD ./entrypoint.sh /root/entrypoint.sh
 ADD ./judge.yaml /root/judge.yaml
 RUN chmod +x /root/entrypoint.sh
