@@ -5,8 +5,6 @@ RUN apt-get -qq update && \
     gcc \
     python3 \
     g++ \
-    fp-compiler \
-    python
 ADD ./entrypoint.sh /root/entrypoint.sh
 ADD ./judge.yaml /root/judge.yaml
 RUN chmod +x /root/entrypoint.sh
